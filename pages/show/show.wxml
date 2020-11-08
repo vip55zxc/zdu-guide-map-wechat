@@ -1,0 +1,101 @@
+<!--pages/show-map/show-map.wxml-->
+<view class="show-map-container">
+  <!-- 导航栏组件 -->
+  <!-- <view class="tabs-container"> -->
+    <tab style="display:{{ isRouterInfo ? 'none' : ''}}" tabList="{{tabs}}" bind:clickTab="clickTab"/>
+  <!-- </view> -->
+  <!-- 地图展示部分 -->
+  <map
+    class="map"
+    id="myMap"
+    bindmarkertap="onToPage"
+    markers="{{markers}}"
+    scale="{{scale}}"
+    polyline="{{polyline}}"
+    include-points="{{includePoints}}"
+    subkey="{{key}}"
+    layer-style="2"
+    skew="20"
+    zIndex="999"
+    style="width: 100%"
+    latitude="{{initMap.latitude}}" 
+    longitude="{{initMap.longitude}}"
+    show-location
+    show-compass
+    enable-overlooking
+    enable-rotate
+    enable-3D
+  />
+  <!-- 侧栏按钮 -->
+  <view 
+    class="sidebar"
+    style="top:{{bounding.height + bounding.top + 10}}px"
+  >
+    <image 
+      bindtap="onToPage" 
+      data-type="path" 
+      class="icon50"  
+      src="../../assets/icon/traffic.png"
+    />
+    <image
+      bindtap="onToPage" 
+      data-type="school"  
+      class="icon50"  
+      src="../../assets/icon/university.png"
+    />
+  </view>
+  <!-- 底部按钮 -->
+  <image 
+    bindtap="onClickLocation"  
+    class="icon50 side location {{ isRouterInfo ? 'animation-location' : ''}}" 
+    src="../../assets/icon/location.png"
+  />
+  <view class="btn-play side play">
+    <image bindtap="onClickPlay" src="../../assets/icon/play.png"/> 
+  </view>
+  <button class="btn-contact side contact" open-type="contact">
+    <image class="icon50" src="../../assets/icon/service.png"/>
+  </button>
+<!-- 游览路线 -->
+  <l-popup  class="popup" show="{{popupShow}}" content-align="bottom" > 
+    <view class="popup-content"> 
+      <block wx:for="{{routes}}" wx:key="index">
+          <view class="popup-item"  data-current="{{item}}" bindtap='onClickPopup'>
+            <view>{{item.name}}</view>
+            <view class="popup-item-text">建筑数 {{item.data.length}} 个</view>
+          </view>
+        </block>
+        <view class="popup-item-tail">
+          <text>没有更多了...</text>
+        </view>
+    </view>
+  </l-popup>
+  <!-- 游览路线详细 -->
+  <view style="display:{{ isRouterInfo ? '' : 'none'}}" class="router-info"> 
+    <image  bindtap='onClickClose' class="close" src='../../assets/icon/false.png' />
+    <view class="router-info-header">
+      <view>{{routerInfo.name}}</view>
+      <view>共有 {{routerInfo.data.length}} 个景点</view>
+    </view>
+    <scroll-view 
+      enable-flex 
+      scroll-x
+      scroll-with-animation
+      class="scroll-content" 
+      scroll-anchoring="true"
+      binddragstart="onBinddragging"
+    >
+      <block wx:for="{{routerInfo.data}}"  wx:key="index">
+        <view class="scroll-item" data-index="{{index}}"  data-current="{{item}}" bindtap='onClickRouter'>
+          <view class="item">
+            <view>
+              <view class="circle {{currentRouter == index ? 'active' : ''}}">{{index+1}}</view>
+              <text style="position:absolute;top:35px">{{item.name}}</text>
+            </view>
+            <view></view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

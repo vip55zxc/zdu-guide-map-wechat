@@ -1,0 +1,6 @@
+{
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "Back": "../../components/BackBtn/back"
+  }
+}

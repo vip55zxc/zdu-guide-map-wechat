@@ -1,0 +1,68 @@
+<view class="page">
+  <Back />
+  <!--页头-->
+  <view class='box'>
+    <text class='feedback-title'>「 路线指南 」</text>
+    <view class='allnr'>
+      <view class='btn-title'>
+        <text class='p'>前言</text>
+      </view>
+      <view class='nr'>
+        <text>学校位于天津市津南区海河教育园区雅深路2号。距天津站20.9公里，距天津西站25.6公里，距天津南站28.8公里，距天津滨海国际机场13.7公里。</text>
+      </view>
+      <view class='nr'>
+        <text>o(=•ェ•=)m</text>
+      </view>
+      <view class='fg'></view>
+
+      <view class='btn-title'>
+        <text class='p'>自驾</text>
+      </view>
+      <view class='nr'>
+        <text>导航目的地是：天津中德应用技术大学西门。</text>
+      </view>
+
+      <view class='btn-title'>
+        <text class='p'>天津站—中德</text>
+      </view>
+      <view class='nr'>
+        <view>路线一：808路公交车。出天津站在公交广场乘坐808路到雅馨路天桥站下车，在雅馨路天桥站转乘228路公交车到融创知香园站下车步行170米到达学校西门。时间总计两小时左右。</view>
+        <view>路线二：乘坐轨道交通3号线（南站方向），在营口道站内换乘轨道交通1号线（东沽路方向），于东沽路站（C口出）下车，换乘224路公交车，在天津中德应用技术大学站下车即到。</view>
+      </view>
+
+      <view class='btn-title'>
+        <text class='p'>天津西站—中德</text>
+      </view>
+      <view class='nr'>
+        <view>路线一：出站后，面向西站入口的右侧是公西站北广场的公交站，乘坐公交652路到雅馨路天桥站下车，在雅馨路天桥站转乘228路公交车到达融创知香园站下车步行170米到达学校西门。时间总计两小时左右。</view>
+        <view>路线二：乘坐轨道交通1号线（东沽路方向），于东沽路站（C口出）下车，换乘224路公交车，在天津中德应用技术大学站下车即到。</view>
+      </view>
+
+      <view class='btn-title'>
+        <text class='p'>天津南站—中德</text>
+      </view>
+      <view class='nr'>
+        <view>路线一：出站后步行到天津南公交站乘坐707到天津图书馆地铁站换乘612到天津大学新校北门站换乘224路到天津中德应用技术大学站下车。耗时近三小时（建议选择路线二）。</view>
+        <view>路线二：乘坐轨道交通3号线（小淀方向），在营口道站站内换乘轨道交通1号线（东沽路方向），于东沽路站（C口出）下车，换乘224路公交车，在天津中德应用技术大学站下车即到。</view>
+      </view>
+
+      <view class='btn-title'>
+        <text class='p'>天津滨海国际机场—中德</text>
+      </view>
+      <view class='nr'>
+        <view>路线一：出站找到滨海国际机场公交站乘坐机场专线4路到湖北路公交站换乘652路（629/808）到博雅花园公交站换乘228路公交车到达融创知香园站，下车步行170米到达学校西门（建议选择路线二）。</view>
+        <view>路线二：乘坐轨道交通2号线（曹庄方向）13站，在西南角站站内换乘轨道交通1号线（东沽路方向），于东沽路站（C口出）下车，换乘224路公交车，在天津中德应用技术大学站下车即到。</view>
+      </view>
+
+      <view class='btn-title'>
+        <text class='p'>PS</text>
+      </view>
+      <view class='nr'>
+        <view>到达东沽路地铁站出站后，可以坐224/226公交车到达学校，但是发车频次不高，建议打车更加方便省时。</view>
+      </view>
+    </view>
+    <!-- 分割线 -->
+    <view class='fg'></view>
+  </view>
+  <image class='banner-image' src='../../assets/images/banner-bg.svg'></image>
+</view>

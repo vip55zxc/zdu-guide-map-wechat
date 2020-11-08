@@ -1,0 +1,15 @@
+{
+  "name": "zdu-guide-map",
+  "version": "1.0.0",
+  "description": "天津中德应用技术大学导览",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lin-ui": "^0.8.7",
+    "thorui-uni": "^1.5.6"
+  }
+}

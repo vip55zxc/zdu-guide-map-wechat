@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+		"tab": "/components/tab/tab",
+    "l-tabs": "/components/lin-ui/tabs/index",
+    "l-tabpanel": "/components/lin-ui/tabpanel/index",
+    "l-popup": "/components/lin-ui/popup/index"
+  },
+  "navigationBarTitleText": "中德导览"
+}

@@ -1,0 +1,10 @@
+<view class='loading'>
+  <div class="bouncing-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <view class='footer'>
+   <image src='../../assets/images/school.png'></image>
+  </view>
+</view>
