@@ -1,6 +1,6 @@
 <div align=center>
 
-<!-- ![QRcode](https://656e-enanyuan-6db383-1257936504.tcb.qcloud.la/showcase/QRcode.jpg?sign=2f3aa5f8f9a8edc282ff67a20fb6deae&t=1566624511) -->
+![QRcode](https://zhongde-guide.oss-cn-huhehaote.aliyuncs.com/Lark20201109-204557.jpeg)
 
 </div>
 
