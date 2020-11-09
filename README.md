@@ -4,7 +4,7 @@
 
 </div>
 
-# 中德导览 · [![GitHub license](https://img.shields.io/github/license/observer-l/NFU-Guide-Map)](https://github.com/Observer-L/NFU-Guide-Map/blob/master/LICENSE) [![test](https://img.shields.io/badge/platform-微信小程序-green)]() [![GitHub stars](https://img.shields.io/github/stars/observer-l/NFU-Guide-Map)](https://github.com/observer-l/NFU-Guide-Map/stargazers)
+# 中德导览 · [![GitHub license](https://img.shields.io/github/license/observer-l/NFU-Guide-Map)](https://github.com/Observer-L/NFU-Guide-Map/blob/master/LICENSE) [![test](https://img.shields.io/badge/platform-微信小程序-green)]() 
 
 中德导览是一款由学生独立开发的以地图为载体，提供**天津中德应用技术大学**（中德）具体地点的位置信息、导航、校园历史及文化介绍的小程序。旨在解决校园导航标识不到位、地图形式低效单一、信息设计不够好等问题，为来中德新人和游客提供更加完美的出行体验。
 
