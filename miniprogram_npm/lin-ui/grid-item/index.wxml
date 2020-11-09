@@ -1,3 +1,0 @@
-<view class="l-grid-item l-grid-item-class grid-item" mut-bind:tap="tapGridItem">
-    <slot></slot>
-</view>

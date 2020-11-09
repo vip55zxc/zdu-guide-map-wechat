@@ -60,47 +60,5 @@ Page({
         },
         imgUrls:data.images,
       })
-
-        // let marker;
-        // const debug = app.globalData.config.debug;
-        // const imgUrls = [];
-        // switch (options.id) {
-        //     case "school":
-        //         marker =
-        //             app.globalData.markers[app.globalData.markers.length - 1].data[0];
-        //         break;
-        //     default:
-        //         if (!options.index) {
-        //             for (const m of app.globalData.markers) {
-        //                 for (const i of m.data) {
-        //                     if (i.id == options.id) {
-        //                         marker = i;
-        //                         break;
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //         else {
-        //             marker = app.globalData.markers[options.index].data.filter((m) => m.id == options.id)[0];
-        //         }
-        //         break;
-        // }
-        // if (!debug) {
-        //     for (let i = 0; i < marker.images; i++) {
-        //         imgUrls.push(this.data.cloudRoot +
-        //             "images/" +
-        //             (marker.short_name || marker.name) +
-        //             "/" +
-        //             i +
-        //             ".jpg");
-        //     }
-        // }
-        // this.setData({
-        //     marker,
-        //     imgUrls,
-        //     logoUrl: marker.logo && !debug
-        //         ? this.data.cloudRoot + "logo/" + marker.logo + ".jpg"
-        //         : ""
-        // });
     }
 });

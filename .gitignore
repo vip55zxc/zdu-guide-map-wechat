@@ -1,0 +1,9 @@
+.editorconfig
+node_modules/
+package-lock.json
+yarn.lock
+.vscode/
+dist/
+.DS_Store
+
+# src/config/secret.ts

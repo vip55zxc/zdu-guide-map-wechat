@@ -1,9 +1,7 @@
 <!--pages/show-map/show-map.wxml-->
 <view class="show-map-container">
   <!-- 导航栏组件 -->
-  <!-- <view class="tabs-container"> -->
-    <tab style="display:{{ isRouterInfo ? 'none' : ''}}" tabList="{{tabs}}" bind:clickTab="clickTab"/>
-  <!-- </view> -->
+  <tab style="display:{{ isRouterInfo ? 'none' : ''}}" tabList="{{tabs}}" bind:clickTab="clickTab"/>
   <!-- 地图展示部分 -->
   <map
     class="map"

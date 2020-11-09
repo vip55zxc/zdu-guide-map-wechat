@@ -3,9 +3,6 @@ import { INDOOR_KEY } from '../../config/appConfig';
 import { MockMarkers } from '../../mock/markers';
 import { MockRoutes } from '../../mock/routes';
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
     key: INDOOR_KEY,
     popupShow:false,
@@ -21,9 +18,8 @@ Page({
     this.init();
     this.includePoints(100);
   },
-  /**
-   * 初始化
-   */
+  
+  /****************** 初始化 *******************/
   init(){
     this.mapCtx = wx.createMapContext('myMap')
     this.setData({ tabs: MockMarkers.reverse().filter(it=>it.type!=='校区'),routes: MockRoutes });
@@ -51,12 +47,16 @@ Page({
       }),
     });
   },
+
+  /****************** 控制视图边距 *******************/
   includePoints(padding){
     this.mapCtx.includePoints({ 
       padding: [padding,padding,padding,padding],
       points: this.data.markers
     });
   },
+
+  /****************** 切换Tab栏 *******************/
   clickTab(event) {
 		const { data, icon, position, scale, type, _id } = event.detail.current;
     this.setData({
@@ -81,10 +81,8 @@ Page({
 		});
     this.includePoints(100)
   },
-  /**
-   * 跳转页面
-   * @param {*} value
-   */
+
+  /****************** 跳转页面 *******************/
   onToPage(value) {
     const that = this;
     // school 去学校介绍  path 去路径介绍 // 其他一律去介绍详情页面
@@ -104,10 +102,6 @@ Page({
         break;
     }
   },
-  /**
-   * 跳转页面方法
-   * @param {*} e
-   */
   navigateTo(url) {
     wx.vibrateShort();
     wx.navigateTo({ url: url });
@@ -142,18 +136,15 @@ Page({
       },
     });
   },
-  /**
-   * 游览路线
-   */
+
+ /****************** 游览路线 *******************/
   onClickPlay() {
     wx.vibrateShort();
     this.setData({ tabs: MockMarkers.reverse(),routes: MockRoutes });
     this.setData({popupShow:true})
   },
 
-  /**
-   * 点击游览路线
-   */
+  /****************** 点击游览路线 *******************/
   onClickPopup(e){
     wx.vibrateShort();
     const routerInfo = e.currentTarget.dataset.current
@@ -192,9 +183,7 @@ Page({
     this.includePoints(100);
   },
 
-  /**
-   * 点击景点详情
-   */
+  /****************** 点击景点详情 *******************/
   onClickRouter(e){
     const that = this;
     const index = e.currentTarget.dataset.index;
@@ -210,6 +199,8 @@ Page({
       }
     });
   },
+
+  /****************** 点击关闭 *******************/
   onClickClose(){
     wx.vibrateShort();
     this.init();
