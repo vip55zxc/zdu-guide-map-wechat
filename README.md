@@ -16,7 +16,7 @@
 
 原生小程序
 
-项目开源，持续维护，欢迎[反馈](https://github.com/Observer-L/NFU-Guide-Map/issues)、 [PR](https://github.com/Observer-L/NFU-Guide-Map/pulls) 和 Star⭐️！
+项目开源，持续维护，欢迎[反馈](https://github.com/vip55zxc/zdu-guide-map-wechat/issues)、 [PR](https://github.com/vip55zxc/zdu-guide-map-wechat/pulls) 和 Star⭐️！
 
 </div>
 
